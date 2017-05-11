@@ -1,0 +1,17 @@
+<html>
+    <div ng-app="myApp" ng-controller="myCtrl">
+    <a href = {{address_fault_policies}}><img [src]="img_fault_policies"></a>
+    <a href = {{address_exception}}><img [src]="img_exception"></a>
+    <a href = {{address_tribal_knowledge}}><img [src]="img_tribal_knowledge"></a>
+    <a href = {{address__operator_input}}><img [src]="img_operator_input"></a>
+    </div>
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function($scope) {
+        });
+    </script>
+    <br><br>
+    <button (mouseover)="onClick($event)">Enter</button>
+    <input type="text" [(ngModel)] = "input">
+    <br><br>
+</html>
